@@ -48,40 +48,4 @@ VALUES ('8', '2019', 'Pokémon Sword', 'Pokémon Shield', 'Pokémon Journeys', '
 INSERT INTO geracao (numero, ano, jogo, jogo2, anime, cidade) 
 VALUES ('9', '2022', 'Pokémon Scarlet', 'Pokémon Violet', 'Saga Paldea', 'Paldea');
 
-CREATE TABLE geracao_link(
-  id int AUTO_INCREMENT NOT NULL,
-  numero int NOT NULL,
-  jogo1_link varchar(1000) NOT NULL,
-  jogo2_link varchar(1000) NOT NULL,
-  anime_link varchar(1000) NOT NULL,
-  geracao_id int NOT NULL
-);
 
-ALTER TABLE geracao_link ADD CONSTRAINT fk_geracao_link FOREIGN KEY (geracao_id) REFERENCES geracao(id);
-
-INSERT INTO geracao_link (numero, jogo1_link, jogo2_link, anime_link) 
-VALUES ('1', 'Pokémon Red', 'Pokémon Blue', 'Saga Kanto');
-
-INSERT INTO geracao_link (numero, jogo1_link, jogo2_link, anime_link) 
-VALUES ('2', 'Pokémon Gold', 'Pokémon Silver', 'Saga Johto');
-
-INSERT INTO geracao_link (numero, jogo1_link, jogo2_link, anime_link) 
-VALUES ('3', 'Pokémon Ruby', 'Pokémon Sapphire', 'Saga Hoenn');
-
-INSERT INTO geracao_link (numero, jogo1_link, jogo2_link, anime_link) 
-VALUES ('4', 'Pokémon Diamond', 'Pokémon Pearl', 'Saga Sinnoh');
-
-INSERT INTO geracao_link (numero, jogo1_link, jogo2_link, anime_link) 
-VALUES ('5', 'Pokémon Black', 'Pokémon White', 'Saga Unova');
-
-INSERT INTO geracao_link (numero, jogo1_link, jogo2_link, anime_link) 
-VALUES ('6', 'Pokémon X', 'Pokémon Y', 'Saga Kalos');
-
-INSERT INTO geracao_link (numero, jogo1_link, jogo2_link, anime_link) 
-VALUES ('7', 'Pokémon Sun', 'Pokémon Moon', 'Saga Alola');
-
-INSERT INTO geracao_link (numero, jogo1_link, jogo2_link, anime_link) 
-VALUES ('8', 'Pokémon Sword', 'Pokémon Shield', 'Pokémon Journeys');
-
-INSERT INTO geracao_link (numero, jogo1_link, jogo2_link, anime_link) 
-VALUES ('9', 'Pokémon Scarlet', 'Pokémon Violet', 'Saga Paldea');
