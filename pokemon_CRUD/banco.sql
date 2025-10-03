@@ -55,6 +55,9 @@ CREATE TABLE habilidade(
   desvantagem varchar(20) NOT NULL
 );
 
+ALTER TABLE pokemon ADD habilidade_id int;
+ALTER TABLE pokemon ADD CONSTRAINT fk_habilidade FOREIGN KEY (habilidade_id) REFERENCES habilidade(id);
+
 INSERT INTO habilidade (tipo, vantagem, desvantagem) 
 VALUES ('Normal', 'Nenhum', 'Lutador');
 INSERT INTO habilidade (tipo, vantagem, desvantagem) 
