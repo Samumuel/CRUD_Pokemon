@@ -39,6 +39,7 @@ class Habilidade {
         $this->tipo = $tipo;
 
         return $this;
+    }
     /**
      * Get the value of vantagem
      */
@@ -74,5 +75,6 @@ class Habilidade {
 
         return $this;
     }
+
 
 }   
