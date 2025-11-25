@@ -12,7 +12,7 @@ function carregarGeracao(idGeracao) {
     if(linhaGeracao)
         linhaGeracao.remove();
 
-    var url = "/LPW/4bim/pokemon-MVC/api/retorna_geracao.php" + "?idGeracao="
+    var url = "/LPW/4bim/pokemon-Ajax/api/retorna_geracao.php" + "?idGeracao="
     + idGeracao;
 
     var xhttp = new XMLHttpRequest();
@@ -64,7 +64,7 @@ function salvarPokemon() {
     dados.append("evolucao", evolucao);
     dados.append("geracao", geracao);
 
-    var url = "/LPW/4bim/pokemon-MVC/api/salva_pokemon.php"
+    var url = "/LPW/4bim/pokemon-Ajax/api/salva_pokemon.php"
 
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", url);
